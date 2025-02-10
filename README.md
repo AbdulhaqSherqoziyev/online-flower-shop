@@ -46,6 +46,7 @@ Bu loyiha **Node.js**, **Express.js**, va **MongoDB** yordamida yaratilgan "Onli
 Loyiha repozitoriyasini klonlang:
 ```bash
 git clone https://github.com/sizning-repo/online-flower-shop.git
+```
 
 ### **2. Loyiha Papkasiga O‘tish**
 Loyiha papkasiga o‘ting:
