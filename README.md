@@ -159,3 +159,4 @@ Bu loyiha MIT litsenziyasi ostida tarqatiladi. Batafsil ma'lumot uchun [LICENSE]
 - **GitHub**: [sizning-repo](https://github.com/sizning-repo)
 - **Email**: abdulhaqsherqoziyev@gmail.com
 ```
+npm start
