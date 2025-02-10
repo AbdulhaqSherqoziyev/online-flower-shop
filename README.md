@@ -1,6 +1,3 @@
-## **README.md**
-
-```markdown
 # Online Flower Shop
 
 Bu loyiha **Node.js**, **Express.js**, va **MongoDB** yordamida yaratilgan "Online Flower Shop" API-sidir. Loyiha foydalanuvchilarga gullar sotib olish, buyurtma berish, sharh qoldirish va boshqa funksiyalarni taqdim etadi.
@@ -49,7 +46,6 @@ Bu loyiha **Node.js**, **Express.js**, va **MongoDB** yordamida yaratilgan "Onli
 Loyiha repozitoriyasini klonlang:
 ```bash
 git clone https://github.com/sizning-repo/online-flower-shop.git
-```
 
 ### **2. Loyiha Papkasiga O‘tish**
 Loyiha papkasiga o‘ting:
