@@ -143,7 +143,8 @@ API-larni test qilish uchun **Postman** yordamida quyidagi amallarni bajarishing
 
 Agar savollaringiz bo‘lsa, quyidagi manzil orqali bog‘lanishingiz mumkin:
 - **Email**: abdulhaqsherqoziyev@gmail.com
-- **GitHub**: [sizning-repo](https://github.com/sizning-repo)
+- **Telegram**: https://t.me/Abdulhaq_Sherqoziyev
+- **GitHub**: [https://github.com/AbdulhaqSherqoziyev/online-flower-shop](https://github.com/AbdulhaqSherqoziyev/online-flower-shop)
 
 ---
 
@@ -156,7 +157,7 @@ Bu loyiha MIT litsenziyasi ostida tarqatiladi. Batafsil ma'lumot uchun [LICENSE]
 ## **Muallif**
 
 - **Ism**: Abdulhaq Sherqoziyev (Netrix)
-- **GitHub**: [sizning-repo](https://github.com/sizning-repo)
+- **GitHub**: [https://github.com/AbdulhaqSherqoziyev/online-flower-shop](https://github.com/AbdulhaqSherqoziyev/online-flower-shop)
 - **Email**: abdulhaqsherqoziyev@gmail.com
 ```
-npm start
+git clone https://github.com/AbdulhaqSherqoziyev/online-flower-shop.git
