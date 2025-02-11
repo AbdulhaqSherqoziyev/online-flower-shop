@@ -10,6 +10,18 @@ exports.getAllProducts = async (req, res) => {
   }
 };
 
+// Mahsulotni id or nom bilan ko‘rish
+exports.getProductById = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const product = await Product.findById(id);
+    if (!product) throw new Error('Product not found');
+    res.status(200).json(product);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+};
+
 // Yangi mahsulot qo'shish
 exports.createProduct = async (req, res) => {
   const { name, price, description, imageUrl, totalQuantity } = req.body;

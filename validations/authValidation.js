@@ -16,4 +16,40 @@ const verifyOTPSchema = Joi.object({
   code: Joi.string().length(6).required(),
 });
 
-module.exports = { registerSchema, loginSchema, verifyOTPSchema };
+const resetPasswordSchema = Joi.object({
+  password: Joi.string().min(8).required(),
+  confirmPassword: Joi.string().valid(Joi.ref('password')).required(),
+});
+
+const changePasswordSchema = Joi.object({
+  currentPassword: Joi.string().min(8).required(),
+  newPassword: Joi.string().min(8).required(),
+  confirmPassword: Joi.string().valid(Joi.ref('newPassword')).required(),
+});
+
+const forgotPasswordSchema = Joi.object({
+  email: Joi.string().email().required(),
+});
+
+const updateProfileSchema = Joi.object({
+  name: Joi.string(),
+  email: Joi.string().email(),
+});
+
+const updatePasswordSchema = Joi.object({
+  currentPassword: Joi.string().min(8).required(),
+  newPassword: Joi.string().min(8).required(),
+  confirmPassword: Joi.string().valid(Joi.ref('newPassword')).required(),
+});
+
+module.exports = {
+  registerSchema,
+  loginSchema,
+  verifyOTPSchema,
+  resetPasswordSchema,
+  changePasswordSchema,
+  forgotPasswordSchema,
+  updateProfileSchema,
+  updatePasswordSchema,
+};
+

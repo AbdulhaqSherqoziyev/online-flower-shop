@@ -1,20 +1,12 @@
 const User = require('../models/User');
 
-// Barcha foydalanuvchilarni olish
-exports.getAllUsers = async (req, res) => {
-  try {
-    const users = await User.find();
-    res.status(200).json(users);
-  } catch (err) {
-    res.status(400).json({ error: err.message });
-  }
-};
 
-// Foydalanuvchini yangilash
+// Admin foydalanuvchini yangilashi mumkin
 exports.updateUser = async (req, res) => {
+  const { id } = req.params;
   const { name, email } = req.body;
   try {
-    const user = await User.findById(req.user._id);
+    const user = await User.findById(id);
     if (!user) throw new Error('User not found');
 
     user.name = name || user.name;
@@ -27,10 +19,11 @@ exports.updateUser = async (req, res) => {
   }
 };
 
-// Foydalanuvchini o'chirish
+// Admin foydalanuvchini o‘chirishi mumkin
 exports.deleteUser = async (req, res) => {
+  const { id } = req.params;
   try {
-    await User.findByIdAndDelete(req.user._id);
+    await User.findByIdAndDelete(id);
     res.status(200).json({ message: 'User deleted successfully' });
   } catch (err) {
     res.status(400).json({ error: err.message });

@@ -5,5 +5,4 @@ const generateToken = (userId) => {
     expiresIn: '15m', // Token muddati
   });
 };
-
 module.exports = generateToken;

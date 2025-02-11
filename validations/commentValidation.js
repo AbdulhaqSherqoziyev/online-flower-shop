@@ -5,4 +5,11 @@ const createCommentSchema = Joi.object({
   status: Joi.string().valid('approved', 'pending', 'rejected').default('pending'),
 });
 
+
+// Update comment status to 'approved'
+const approveCommentSchema = Joi.object({
+  status: Joi.string().valid('approved'),
+});
+
+
 module.exports = { createCommentSchema };

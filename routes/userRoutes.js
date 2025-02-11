@@ -1,11 +1,13 @@
 const express = require('express');
 const userController = require('../controllers/userController');
-const authMiddleware = require('../middlewares/authMiddleware');
+const { protect, admin } = require('../middlewares/authMiddleware'); // ❗ `admin` noto‘g‘ri import qilingan bo‘lishi mumkin
 
 const router = express.Router();
 
-router.get('/', authMiddleware, userController.getAllUsers);
-router.put('/', authMiddleware, userController.updateUser);
-router.delete('/', authMiddleware, userController.deleteUser);
+// Foydalanuvchi o‘z ma’lumotlarini yangilashi
+router.put('/', protect, userController.updateUser);
+
+// Foydalanuvchi o‘z profilini o‘chirish
+router.delete('/', protect, userController.deleteUser);
 
 module.exports = router;

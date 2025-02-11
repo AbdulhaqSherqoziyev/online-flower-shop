@@ -5,4 +5,26 @@ const updateUserSchema = Joi.object({
   email: Joi.string().email(),
 });
 
-module.exports = { updateUserSchema };
+// Update user password
+const updatePasswordSchema = Joi.object({
+  currentPassword: Joi.string().min(8).required(),
+  newPassword: Joi.string().min(8).required(),
+  confirmPassword: Joi.string().valid(Joi.ref('newPassword')).required(),
+});
+
+// Update user status
+const updateStatusSchema = Joi.object({
+  status: Joi.string().valid('active', 'inactive'),
+});
+
+// Update user address
+const updateAddressSchema = Joi.object({
+  street: Joi.string(),
+  city: Joi.string(),
+  state: Joi.string(),
+  country: Joi.string(),
+  zipCode: Joi.string(),
+});
+
+
+module.exports = { updateUserSchema, updatePasswordSchema, updateStatusSchema, updateAddressSchema };

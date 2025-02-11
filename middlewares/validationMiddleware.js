@@ -12,6 +12,7 @@ const validateRequest = (schema) => (req, res, next) => {
   next();
 };
 
+
 module.exports = {
   validateRegister: validateRequest(registerSchema),
   validateLogin: validateRequest(loginSchema),
