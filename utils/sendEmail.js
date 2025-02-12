@@ -17,7 +17,7 @@ const sendEmail = async (email, subject, text) => {
       html: `
         <div style="max-width: 600px; margin: auto; padding: 20px; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;">
           <div style="text-align: center; padding-bottom: 20px;">
-            <img src="https://via.placeholder.com/150x50?text=Flower+Shop" alt="Flower Shop" style="max-width: 100px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15Usj8EFeP6kMSrXUG3uUruKIceCGNSDrrQ&s" alt="Flower Shop" style="max-width: 100px;">
           </div>
           <h2 style="color: #ff66b2; text-align: center;">🌸 ${subject} 🌸</h2>
           <p style="font-size: 16px; color: #444; text-align: center;">${text}</p>

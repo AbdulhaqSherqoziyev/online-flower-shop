@@ -46,10 +46,10 @@ module.exports = {
   registerSchema,
   loginSchema,
   verifyOTPSchema,
-  resetPasswordSchema,
-  changePasswordSchema,
-  forgotPasswordSchema,
-  updateProfileSchema,
-  updatePasswordSchema,
+  resetPasswordSchema,    // will be update
+  changePasswordSchema,   // will be update
+  forgotPasswordSchema,   // will be update
+  updateProfileSchema,    // will be update
+  updatePasswordSchema,   // will be update
 };
 

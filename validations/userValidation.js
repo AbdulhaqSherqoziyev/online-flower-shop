@@ -27,4 +27,9 @@ const updateAddressSchema = Joi.object({
 });
 
 
-module.exports = { updateUserSchema, updatePasswordSchema, updateStatusSchema, updateAddressSchema };
+module.exports = { 
+  updateUserSchema,
+  updatePasswordSchema, // will be update
+  updateStatusSchema,   // will be update
+  updateAddressSchema   // will be update
+};
