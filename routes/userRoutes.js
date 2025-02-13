@@ -1,6 +1,6 @@
 const express = require('express');
 const userController = require('../controllers/userController');
-const { protect, admin } = require('../middlewares/authMiddleware'); // ❗ `admin` noto‘g‘ri import qilingan bo‘lishi mumkin
+const { protect, admin } = require('../middlewares/authMiddleware'); // `admin` noto‘g‘ri import qilingan bo‘lishi mumkin
 
 const router = express.Router();
 
